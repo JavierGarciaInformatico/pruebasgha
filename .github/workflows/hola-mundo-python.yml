@@ -3,11 +3,11 @@ name: Hola Mundo en Python
 on:
   workflow_dispatch:  # Ejecución manual
 
-
 jobs:
   decir-hola:
     runs-on: ubuntu-latest
 
+    steps:
     - name: Configura Python
       uses: actions/setup-python@v4
       with:
@@ -16,3 +16,4 @@ jobs:
     - name: Muestra un mensaje
       run: |
         python -c "print('HOLA MUNDO JAVIER GARCIA')"
+
