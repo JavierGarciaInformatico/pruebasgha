@@ -1,0 +1,22 @@
+name: Hola Mundo en Python
+
+on:
+  push:
+    branches: [JavierGarciaExercises]
+
+jobs:
+  decir-hola:
+    runs-on: windows-latest
+
+    steps:
+    - name: Clona el repositorio
+      uses: actions/checkout@v3
+
+    - name: Configura Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Muestra un mensaje
+      run: |
+        python -c "print('Hola Mundo desde GitHub Actions en Windows, tronco')"
