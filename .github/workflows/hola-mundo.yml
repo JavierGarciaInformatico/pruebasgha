@@ -15,4 +15,5 @@ jobs:
       run: echo javier garcia
 
     - name: Usar la acción de leer hola.txt
-      uses: ./.github/actions/leer-hola-sin-composite  # Usamos la acción que creamos, importante tneer el action.yml dentro
+      uses: ./.github/actions/leer-hola  # Usamos la acción que creamos, importante tneer el action.yml dentro
+      # ./ se refiere al directorio raíz de tu repositorio, donde se encuentra el archivo .github. Luego, dentro de .github, está el subdirectorio actions, y dentro de actions está la acción leer-hola.

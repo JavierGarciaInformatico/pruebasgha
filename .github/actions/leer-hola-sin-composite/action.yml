@@ -5,3 +5,8 @@ runs:
   using: "shell"  # Ejecuta comandos de shell directamente
   shell: bash  # Definimos que queremos usar bash como terminal
   run: cat hola.txt  # El comando que va a leer el archivo hola.txt
+
+# GitHub Actions no permite que se ejecute código de shell directamente sin un contenedor o entorno definido. En otras palabras, necesitas especificar en el manifiesto de la acción cómo debe ejecutarse el código, y eso lo gestionan las acciones de tipo composite
+
+# Si intentas escribir una acción sin composite y sin usar Docker o Node.js, GitHub no sabrá cómo ejecutar los comandos que pongas en el archivo action.yml, y generará errores de sintaxis o de ejecución, ya que el sistema necesita un tipo de entorno para ejecutar el código.
+
