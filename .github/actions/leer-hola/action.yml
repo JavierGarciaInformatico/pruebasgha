@@ -6,7 +6,7 @@ runs:
   steps:
     - name: Leer el archivo hola.txt
       shell: bash  # Definimos el shell explícitamente
-      run: ls  # Ejecutamos el comando 'cat' para leer el archivo
+      run: cat hola.txt  # Ejecutamos el comando 'cat' para leer el archivo
 
 
 #Las acciones sueltas están pensadas para ser utilizadas dentro de workflows.
