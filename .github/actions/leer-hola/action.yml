@@ -2,10 +2,10 @@ name: Leer archivo hola.txt
 description: "Acción que lee el archivo hola.txt y lo imprime"
 
 runs:
-  using: "composite"
+  using: "composite"  # Usamos una acción compuesta
   steps:
     - name: Leer el archivo hola.txt
-      run: ls /github/workspace/
+      run: cat /github/workspace/hola.txt  # Comando correcto para leer el archivo
 
 
 #Las acciones sueltas están pensadas para ser utilizadas dentro de workflows.
