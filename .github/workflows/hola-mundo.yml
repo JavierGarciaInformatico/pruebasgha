@@ -1,4 +1,4 @@
-name: Hola Mundo en Python
+name: Hola Mundo
 
 on:
   workflow_dispatch:  # Ejecución manual
