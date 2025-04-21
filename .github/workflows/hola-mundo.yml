@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Checkout del repositorio
-      uses: actions/checkout@v3  # Este paso es esencial para usar archivos de tu propio repositorio
+      uses: actions/checkout@v4  # Este paso es esencial para usar archivos de tu propio repositorio
 
     - name: mensaje
       run: echo javier garcia
