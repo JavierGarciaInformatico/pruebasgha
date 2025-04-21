@@ -13,4 +13,4 @@ jobs:
       run: echo javier garcia
 
     - name: Usar la acción de leer hola.txt
-      uses: ./.github/actions/leer-hola  # Usamos la acción que creamos
+      uses: ./.github/actions/leer-hola.yml  # Usamos la acción que creamos
