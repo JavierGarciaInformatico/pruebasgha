@@ -5,8 +5,8 @@ runs:
   using: "composite"  # Usamos la acción compuesta para correr comandos shell directamente
   steps:
     - name: Leer el archivo hola.txt
-      shell: bash  # Definimos el shell explícitamente
-      run: cat hola.txt  # Ejecutamos el comando 'cat' para leer el archivo
+      shell: bash  # tipo de terminal la bash
+      run: cat hola.txt  # leemos archivo hola txt
 
 
 #Las acciones sueltas están pensadas para ser utilizadas dentro de workflows.

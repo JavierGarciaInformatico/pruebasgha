@@ -1,0 +1,7 @@
+name: Leer archivo hola.txt
+description: "Acción que lee el archivo hola.txt y lo imprime"
+
+runs:
+  using: "shell"  # Ejecuta comandos de shell directamente
+  shell: bash  # Definimos que queremos usar bash como terminal
+  run: cat hola.txt  # El comando que va a leer el archivo hola.txt
