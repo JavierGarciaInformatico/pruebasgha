@@ -1,0 +1,13 @@
+name: Hola Mundo en Python
+
+on:
+  workflow_dispatch:  # Ejecución manual
+
+jobs:
+  decir-hola:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: mensaje
+      run: echo javier garcia
