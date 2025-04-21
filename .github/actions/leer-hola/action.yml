@@ -4,7 +4,7 @@ description: "Acción que lee el archivo hola.txt y lo imprime"
 runs:
   using: "docker"
   image: "ubuntu:latest"
-  entrypoint: "bash -c 'cat /github/workspace/hola.txt'"
+  entrypoint: "bash -c 'ls /github/workspace/'"
 
 
 #Las acciones sueltas están pensadas para ser utilizadas dentro de workflows.
